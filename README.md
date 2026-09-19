@@ -38,7 +38,6 @@ Projet de statistiques - Analyse univariée, bivariée et tests d'hypothèses su
 * `Rapport_Sujet_8.pdf` : rapport compilé
 * `Sportifs.txt` / `Sportifs.xlsx` : jeu de données brutes
 * `Descriptif Sportifs.pdf` : description du jeu de données
-* `Projet stat.Rproj` : fichier projet RStudio
 
 ## Lancer l'analyse
 
