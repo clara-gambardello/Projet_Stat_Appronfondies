@@ -1,0 +1,348 @@
+---
+title: "Projet statistique approfondie"
+author: "Clara Gambardello"
+date: "2024-12-19"
+output: pdf_document
+---
+
+## Introduction
+
+Lors de ce projet de statistique nous souhaitons analyser un jeu de données à l'aide d'outils tel que les tests statistiques, notre jeu de données contient 5 variables et 500 individus, il est question de sportifs de leur satisfaction, le nombre de sports qu'ils pratiquent leur temps de récupération et de réaction. Nous allons réaliser différentes analyses univariés et bivariés puis nous allons confirmer nos observations par le test statistique adapté à la situation.
+
+### Préparation du jeu de donnée
+
+Dans un premier temps nous chargeons les différents packages que nous souhaitons utiliser, d'abord openxlsx pour pouvoir utiliser notre table de donnée, dplyr et stringr pour pouvoir trier nos données à notre convenance, gérer les chaines de caratères et pour notre fonction de "nettoyage", MASS pour nos estimations de loi normale, nortest pour certains de nos tests statistiques enfin ggplot2 et GGally pour la réalisation de nos graphiques.
+
+```{r, warning=FALSE, include=FALSE}
+
+library(openxlsx)
+library(dplyr)
+library(stringr)
+library(ggplot2)
+library(forcats)
+library(GGally)
+library(MASS)
+library(nortest)
+```
+
+Nous exportons ensuite la table de donnée sous forme de fichier excel, nous décidons de nommé notre jeu de donnée "sportifs".
+
+```{r, include=FALSE}
+
+sportifs<-read.table("Sportifs.txt", header=TRUE )
+sportifs_excel<-write.xlsx(sportifs,"Sportifs.xlsx")
+```
+
+Nous passons ensuite notre table de données dans une fonction que nous avons pu créer cette année, elle permet de reprendre le nom des variables et les modifier pour supprimer les accents, remplacer les ponctuations ainsi que les espaces par des "\_".
+
+```{r, include=FALSE}
+
+cleanNames <- function(df){
+  colnames_df<-colnames(df)
+  colnames_clean <- colnames_df %>% 
+    str_replace_all(pattern = "[éèê]", replacement = "e") %>%
+    str_replace_all(pattern = "î", replacement = "i")%>% 
+    str_replace_all(pattern = "à", replacement = "a")%>%
+    str_replace_all(pattern = "[ ]+", replacement = "_")%>%
+    str_replace_all(pattern = "[:punct:]+", replacement = "_")%>%
+    str_to_lower()
+  
+  colnames(df)<-colnames_clean
+  return(df)
+}
+```
+
+Nous renommons ensuite les variables aux noms plutôt longs pour une plus grande efficacité de travaille, enfin nous utilisons la commande "attach" de R pour n'utiliser que les noms de variables sans dollard dans notre code.
+
+```{r,include=FALSE}
+
+sportifs<-cleanNames(sportifs)%>%
+  rename(reaction=temps_de_reaction_milisconde_, recup=temps_de_recuperation_sec_)
+sportifs
+
+attach(sportifs)
+```
+
+### Analyse univariée des variables qualitatives
+
+Nous commençons notre analyse univariée par la variable "sexe", nous réalisons un tableau de contingence, nous remarquons que les hommes sont en plus grand nombre que les femmes, en effet notre jeu de données est constitué de 199 femmes contre 301 hommes.
+
+```{r, echo=FALSE}
+
+table(sexe)
+```
+
+On réalise ensuite un diagramme en barre du niveau de staisfaction chez les sportifs. On constate ici qu'il y a plus de sportifs satisfait que de sportifs moyennement satisfait que de sportifs peu satisfait.
+
+```{r, echo=FALSE}
+
+ggplot(sportifs)+
+  aes(x=fct_inorder(satisfaction), fill=satisfaction)+
+  geom_bar(color="black",fill=c("green","orange","red"))+
+  ggtitle("Statisfaction chez les sporifs")+
+  xlab("Satisfaction")+
+  ylab("nb de personnes")+
+  theme_bw()
+```
+
+### Analyse univariée des variables quantitives
+
+On réalise un diagramme en barre du nombre de sport pratiqué chez les sportifs, en effet cette variable est discrète. On constate ici que ce nombre varie de 1 à 7 sports et qu'une majorité de sportifs pratiquent 2 sports, beaucoup de sportifs pratiquent 1 où 3 sports enfin ce nombre décroit pour 4, 5, 6 et 7 sports.
+
+```{r, echo=FALSE}
+
+ggplot(sportifs)+
+  aes(x=nb_sports)+
+  geom_bar(fill="lightpink3", color="black")+
+  ylab("nb de personnes")+
+  ggtitle("Nombre de sports différents pratiqués")+
+  theme_bw()
+```
+
+Nous pensons que cette variable peut suivre une loi de Poisson, en effet cette loi représente le nombre d'évènements se produisant dans un intervalle fixe. Nous nous proposons donc de vérifier cette hypothèse :
+
+```{r}
+
+n<-length(nb_sports)
+t<-sum(nb_sports)
+lambda0<-mean(nb_sports)
+pvaleur<-1-ppois(t,n*lambda0)
+pvaleur
+```
+
+Dans tout les tests que nous allons réaliser, nous allons devoir interpreter une p-valueur, c'est-à-dire on cherche à savoir si 
+$d({\underline{x}})$ vaut 0 ou 1 selon un $\alpha$ choisit, ici $\alpha$ = 0.05 par defaut dans tout les tests. 
+Si $d({\underline{x}})=1$ alors la statistique de test $T(\underline{x})> C_{\alpha}$ et donc p-valueur $\leq$ $\alpha$.
+On peut donc accepter $H_1$ si et seulement si $d({\underline{x}})=1$ et donc p-valueur $\leq$ 0.05.
+Dans les logiciels de statistique comme R, on a p-valeur=Q(]t,$+\infty$[) ou T est $P_0$ dominée par la loi Q.
+
+Nous obtenons pour ce test une p-value de 0.49, nous ne pouvons pas accepter l'hypothèse $H_0$ selon laquelle notre variable suit une loi de Poisson car $d({\underline{x}})=0$.
+
+Nous poursuivons avec la variable de temps de réaction, c'est une variable quantitative continue nous réalisons donc un histogramme, nous affichons également sa courbe de densité avec la commande geom_density de ggplot. Nous pensons reconnaître la densité de la loi normale, pour confirmer cette hypothèse nous réalisons donc un graphique appelé "droite de Henry".
+
+```{r, echo=FALSE, warning=FALSE}
+
+ggplot(sportifs)+
+  aes(x=reaction)+
+  geom_histogram(aes(y = ..density..), binwidth = 5, fill="pink", col="black")+
+  geom_density(alpha=0.2, fill='darkgreen')+
+  xlab("temps de réaction en mili secondes ")+
+  ylab("densité")+
+  ggtitle("Histogramme du temps de reaction")+
+  theme_bw()
+```
+
+Nous obtenons ensuite une droite, on peut donc supposer que les observations sont indépendantes indentiquement distribuées de loi Gausienne, ce qui va dans le sens de notre hypothèse.
+
+```{r, echo=FALSE}
+
+qqnorm(reaction, main="Droite de Henry pour la variable reaction")
+qqline(reaction, col="red")
+```
+
+Nous souhaitons à présent réaliser un test statistique pour vérifier si nous avons à faire à une loi normale. Il existe trois tests pour tester si une variable suit une loi normale : Kolmogorov-Smirnov, Shapiro-Wilk, et Anderson-Darling dans notre cas, le plus adapté est celui de Anderson-Darling en effet nous avons 500 observations, le test de Shapiro se réalise plutôt sur des échantillons plus mince, de plus le test de Anderson-Darling est plus robuste et plus puissant pour détecter les écarts aux extrémités de la distribution que le test de Kolmogorov-Smirnov, justement sur le graphique précédent on observe des points aux extrémtiés qui s'éloignent de la droite de Henry.
+
+Nous réalisons le test d'Anderson-Darling sur le temps de réaction :
+
+```{r, echo=FALSE}
+
+ad.test(reaction)
+```
+La p-value est inférieur à 0.05, donc $d({\underline{x}})=1$ et on rejette $H_0$ il semble que notre variable ne suive pas une loi normale malgré notre première impression résultant de l'observation des graphiques. 
+
+Grâce à la droite de Henry que nous avons obtenus nous pouvons tout de même supposer que les observations de la variable "reaction" sont i.i.d suivant une loi normale, nous allons donc chercher à estimer les paramètres de cette loi normale par la méthode du maximum de vraisemblance, nous devrions retrouvé la moyenne et l'écart type de notre variable.
+
+```{r, echo=FALSE}
+
+"estimateurs"
+esti_reaction<-fitdistr(reaction, "normal")
+esti_reaction
+
+"Moyenne et écart-type de reaction"
+mean(reaction)
+sd(reaction)
+```
+
+Les deux résultats correspondent nous pouvons donc supposer que notre variable suit une loi normale de moyenne 58,08 et de variance $13.81^2$.
+
+Nous passons ensuite au graphique du temps de récupération, c'est également une variable quantitative continue nous réalisons donc un histogramme auquel nous superposons la courbe de densité. Ici comme précédement nous pensons reconnaître la densité d'une loi normale nous faisons donc de nouveau une droite de Henry.
+
+```{r, echo=FALSE}
+
+ggplot(sportifs)+
+  aes(x=recup)+
+  geom_histogram(aes(y = ..density..), binwidth = 5, fill="aquamarine", col="black")+
+  geom_density(alpha=0.2, fill='darkblue')+
+  xlab("temps de récupération en secondes")+
+  ylab("densité")+
+  ggtitle("Histogramme du temps de récupération")+
+  theme_bw()
+```
+
+Nous obtenons de nouveau une droite, ce qui va également dans le sens de notre hypothèse.
+
+```{r, echo=FALSE}
+
+qqnorm(recup, main="Droite de Henry pour la variable recup")
+qqline(recup, col="blue")
+```
+
+Nous recommençons le test d'Anderson-Darling, on utilise se test pour les mêmes raisons que pour la variable "reaction" :
+
+```{r}
+
+ad.test(recup)
+```
+La p-value est inférieur à 0.05, donc $d({\underline{x}})=1$ et on rejette $H_0$ il semble de nouveau que notre hypothèse soit erroné, la variable ne suit pas une loi normale. 
+Grâce à la droite de Henry que nous avons obtenus nous pouvons quand même supposer que les observations de la variable "recup" sont i.i.d suivant une loi normale, nous réalisons de nouveau notre estimation du maximum de vraisemblance que nous comparons avec la moyenne et l'écart type de notre variable recup :
+
+```{r, echo=FALSE}
+
+"estimateurs"
+esti_recup<-fitdistr(recup, "normal")
+esti_recup
+
+"Moyenne et écart-type de recup"
+mean(recup)
+sd(recup)
+```
+
+Les deux résultats correspondent nous pouvons donc supposer que notre variable recup suit une loi normale de moyenne 82.081 et de variance $13.85^2$.
+
+### Analyse bivariés et multivariés
+
+Nous commençons nos analyse bivariées par la réalisation d'un pair plot avec la commande ggpairs de la librairie GGally :
+
+```{r, echo=FALSE, message=FALSE}
+
+ggpairs(sportifs, aes(fill=sexe))+
+  ggtitle("Pair plot du jeu de données")
+```
+
+La premiere chose que l'on remarque est que le temps de récupération semble inversement proportionnel au temps de réaction nous proposons donc de réaliser un test de corrélation de Pearson :
+
+```{r, echo=FALSE}
+
+cor.test(recup,reaction)
+```
+
+Nous voyons ici avec une p-value très petite, nous pouvons rejeter l'hypothèse $H_0$ d'indépendance de ses deux variables, de plus leur coefficient de corrélation est proche de -1, ces deux variables sont donc fortement négatievement correlé quand l'une est grande l'autre est petite, autrement dit plus le temps de réaction du sportif est élevé plus son temps de récupération est faible. Afin de constater si cette relation diffère entre homme et femme nous réaliser un graphique du temps de réaction en fonction tu temps de récupération selon le sexe :
+
+```{r, echo=FALSE, message=FALSE}
+
+ggplot(sportifs)+ 
+  aes(x=reaction, y=recup) +
+  facet_wrap(~sexe)+
+  geom_point(color="antiquewhite4") +
+  geom_smooth(method = "lm")+
+  ggtitle("Récupération en fonction de réaction chez hommes/femmes")+
+  ylab("recuperation")+
+  xlab("reaction")+
+  theme_bw()
+```
+
+En traçant ensuite une droite de régression nous constatons que nos points suivent une droite c'est ce que nous attendions. De plus on constate ici que les valeurs diffèrent selon le sexe du sportif, en effet le temps de réaction des femmes semble plus haut mais leur temps de récupération serait plus bas, nous réalisons donc des boxplot pour visualiser les temps de réaction et de récupération en fonction du sexe :
+
+```{r, echo=FALSE}
+
+ggplot(sportifs)+
+  aes(x=as.factor(sexe),y=reaction)+
+  geom_boxplot(fill="magenta4")+
+  ggtitle("Temps de réaction en f° du sexe")+
+  xlab("sexe")+
+  ylab("temps de réaction en milli-seconde")+
+  theme_bw()
+
+ggplot(sportifs)+
+  aes(x=as.factor(sexe),y=recup)+
+  geom_boxplot(fill="olivedrab2")+
+  ggtitle("Temps de récupération en f° du sexe")+
+  xlab("sexe")+
+  ylab("temps de recupération en seconde")+
+  theme_bw()
+```
+
+Nous décidons de réaliser des tests de Welch, adaptations de test de Student pour comparer les temps de réaction et de récupération chez les hommes et les femmes, on peut utiliser ce test car plus haut on a supposé que les variables "reaction" et "recup" étaient toute les deux i.i.d suivant une loi normale. 
+On test $H_0$ : le temps de réaction des hommes est supérieur à celui des femmes contre $H_1$ : le temps de réaction des hommes est inférieur à celui des femmes. 
+
+```{r, echo=FALSE}
+
+sportifs_H<-sportifs[sportifs$sexe=="Homme",]
+sportifs_F<-sportifs[sportifs$sexe=="Femme",]
+
+t.test(sportifs_H$reaction, sportifs_F$reaction, alternative="less")
+```
+
+On trouve ici une p-value inférieur à 2.2e-16, donc $d(\underline{x})=1$, on accepte $H_1$, le temps de réaction moyen chez les femmes est plus élevé que chez les hommes, ce qui confirme ce que nous observions avec le boxplot.
+
+On fait de même pour le temps de récupération, on test $H_0$ Le temps de récupération moyen chez les hommes est inférieur à celui des femmes contre $H_1$ le temps moyen de récupération des hommes est supérieur à celui des femmes.
+
+```{r, echo=FALSE}
+
+t.test(sportifs_H$recup, sportifs_F$recup, alternative="greater")
+```
+
+La p-value est très petite on accepte donc $H_1$ le temps de récupération chez les femmes est moins élevé que chez les hommes, c'est également ce que nous avions constaté sur le boxplot.
+
+Ensuite en observant le pair plot il nous semble observer des différences de satisfaction en fonction du sexe, nous réalisons le graphique suivant :
+
+```{r, echo=FALSE}
+
+ggplot(sportifs)+
+  aes(x=sexe, fill=satisfaction)+
+  geom_bar(position="dodge")+
+  xlab("sexe")+
+  ylab("nb de personnes")+
+  ggtitle("Satisfaction chez les hommes et les femmes")+
+  theme_bw()
+```
+
+On observe ici que les femmes semblent moins souvent satisfaite que les hommes, en revanche elles sont plus souvent moyennement satisfaite qu'eux, les hommes eux répondent plus souvent peu satisfait que les femmes. Afin de comprendre si les variables qualtitatives "satisfaction" et "sexe" sont indépendantes, nous réalisons pour ce faire un test d'indépendance du $\chi^2$, nous utilisons la commande de R "chisq.test" avec le tableau de contingence de nos deux variables.
+
+```{r, echo=FALSE}
+
+tab_cont<-table(satisfaction, sexe)
+chisq.test(tab_cont)
+```
+
+La p-value est inférieur à 2.2e-16, ainsi nous pouvons accepter $H_1$, les deux variables sexe et satisfaction ne sont pas indépendantes.
+
+Nous souhaitons maintenant étudier si le nombre de sport pratiqué influe sur la satisfaction des sportifs.
+
+```{r, echo=FALSE}
+
+ggplot(sportifs)+
+  aes(x=satisfaction, y=nb_sports, fill=satisfaction )+
+  geom_violin()+
+  ggtitle("satisfaction selon le nombre de sports")
+```
+
+Nous constatons sur le graphique suivant que les plus satsifait sont ceux qui pratiquent le moins de sports, et plus particulièrement ceux qui pratiquent 1 ou 3 sports, en revanche les moins satisfait sont en moyenne ceux qui pratiquent 2 sports, ceux qui pratiquent le plus de sports se disent moyennement satisfait.
+
+Nous souhaitons savoir si en moyenne le nombre de sport pratiqué chez les sportifs peu satisfait est égal à 2 nous testons donc $H_0$ : $\mu$=2 contre $H_1$ : $\mu$$\neq$ 2.
+
+```{r, echo=FALSE}
+
+sportifs_S<-sportifs[sportifs$satisfaction=="Satisfait",]
+sportifs_PS<-sportifs[sportifs$satisfaction=="Peu satisfait",]
+sportifs_MS<-sportifs[sportifs$satisfaction=="Moyennement satisfait",]
+
+t.test(sportifs_PS$nb_sports, alternative="two.sided", mu=2)
+```
+
+Ici on accepte $H_1$ notre moyenne n'est pas égale à 2 cependant selon l'intervalle de confiance et la moyenne donnée, on constate que ce nombre est très proche de 2, ce que nous pouvions conclure de notre diagramme violon.
+
+Nous voulons maintenant comparer le nombres de sports moyens chez les sportifs moyennement satisfait et peu satisfait nous testons 
+$H_0$ : Le nombre de sports moyen chez les sportifs peu satisfait est supérieur à celui des sportifs moyennement satisfaits.
+
+```{r, echo=FALSE}
+
+t.test(sportifs_MS$nb_sports, sportifs_PS$nb_sports, alternative="greater")
+```
+
+Nous pouvons ici accepter $H_1$ car la p-value est très petite et donc $d(\underline{x})=1$, donc le nombre de sports moyens pratiqué par les sportifs moyennement satisfait est supérieur à celui des sportifs peu satisfait.
+
+## Conclusion
+
+Nous  avons étudié un jeu de donnée concernant des sportifs, nous avons constaté plusieurs choses avec l'étude de nos graphiques et la réalisation de différents tests statistiques. D'abord nous avons pu constater que malgré nos observations, les variables temps de réaction et temps de récupération ne suivent pas des lois normales, mais que nous pouvions le supposer grâce aux droite de Henry. Elles sont fortement correlées entre elles, plus l'une est élevé plus l'autre est faible. Nous avons également observé une différence de temps de réaction et récupération en fonction du sexe, en effet les femmes ont des temps de réaction plus élevé, les hommes de temps de récupération plus élevé. Nous n'avons pas pu conclure quand à une potentielle loi que suivrait la variable nombre de sports. Enfin nous notons différent lien de dépendance entre certaine variables, d'abord les variables sexe et satisfaction qui sont dépendantes et les variables temps de réaction ou temps de récupération et nombre de sports qui sont faiblement dépendantes.
+

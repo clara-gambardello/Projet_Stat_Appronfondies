@@ -1,0 +1,501 @@
+"Sexe" "Satisfaction" "Nb.sports" "Temps.de.reaction..milisconde." "Temps.de.récupération..sec."
+"Homme" "Satisfait" 3 37.3 103.2
+"Femme" "Moyennement satisfait" 2 68.2 72.9
+"Homme" "Moyennement satisfait" 4 40.3 98.9
+"Homme" "Moyennement satisfait" 4 40.3 98.9
+"Femme" "Moyennement satisfait" 2 58.6 80.7
+"Homme" "Satisfait" 4 47.5 91.4
+"Homme" "Peu satisfait" 1 51.6 88.7
+"Homme" "Peu satisfait" 2 45.9 94.4
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Homme" "Satisfait" 1 33 108.1
+"Femme" "Moyennement satisfait" 4 84.8 56.7
+"Femme" "Satisfait" 3 64.6 76.3
+"Homme" "Satisfait" 2 34.2 105
+"Femme" "Moyennement satisfait" 2 54.5 85.2
+"Homme" "Peu satisfait" 2 78.6 63
+"Homme" "Satisfait" 4 58 82.9
+"Femme" "Peu satisfait" 1 72.2 67.9
+"Homme" "Peu satisfait" 2 67.6 72.7
+"Femme" "Peu satisfait" 2 68.4 72.5
+"Homme" "Moyennement satisfait" 4 35.5 103.8
+"Homme" "Satisfait" 3 51 88
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Homme" "Satisfait" 1 61.2 79.5
+"Femme" "Satisfait" 3 47 92.2
+"Homme" "Peu satisfait" 3 58.9 81.8
+"Homme" "Satisfait" 1 40.1 99.2
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Homme" "Satisfait" 2 45.7 96.6
+"Homme" "Peu satisfait" 2 67.6 72.7
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Femme" "Moyennement satisfait" 3 73.8 66.8
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Femme" "Moyennement satisfait" 5 71.7 67
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Femme" "Moyennement satisfait" 3 73.8 66.8
+"Femme" "Moyennement satisfait" 1 70.8 69.5
+"Homme" "Satisfait" 2 45.7 96.6
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Homme" "Satisfait" 2 60.1 80.6
+"Homme" "Satisfait" 1 40.1 99.2
+"Femme" "Satisfait" 3 47 92.2
+"Femme" "Moyennement satisfait" 5 71.7 67
+"Homme" "Satisfait" 4 58 82.9
+"Femme" "Moyennement satisfait" 3 50.7 89.1
+"Femme" "Moyennement satisfait" 2 74.5 66.1
+"Femme" "Satisfait" 3 55.4 84.7
+"Homme" "Peu satisfait" 2 66.1 74.2
+"Femme" "Moyennement satisfait" 2 60.8 79.3
+"Homme" "Satisfait" 3 46.7 93.1
+"Homme" "Moyennement satisfait" 4 35.5 103.8
+"Homme" "Moyennement satisfait" 4 40.3 98.9
+"Homme" "Satisfait" 1 44.1 95.9
+"Homme" "Satisfait" 3 41.4 97.8
+"Femme" "Moyennement satisfait" 3 73.8 66.8
+"Homme" "Satisfait" 1 44.1 95.9
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Homme" "Satisfait" 2 46.2 94.5
+"Homme" "Satisfait" 3 49.4 92.1
+"Homme" "Peu satisfait" 2 66.1 74.2
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Homme" "Peu satisfait" 1 56.9 82.1
+"Femme" "Peu satisfait" 1 72.2 67.9
+"Homme" "Peu satisfait" 1 59.9 82.1
+"Homme" "Satisfait" 2 67.2 72.3
+"Homme" "Satisfait" 1 47.2 91.3
+"Homme" "Satisfait" 1 44.1 95.9
+"Homme" "Satisfait" 1 51.1 88.8
+"Homme" "Moyennement satisfait" 2 67.1 73
+"Homme" "Satisfait" 3 49.4 92.1
+"Femme" "Peu satisfait" 3 81.3 59.3
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Homme" "Satisfait" 2 58.2 81
+"Femme" "Moyennement satisfait" 2 64.6 76.3
+"Femme" "Moyennement satisfait" 2 60.3 80
+"Femme" "Satisfait" 3 64.6 76.3
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Peu satisfait" 3 47.9 92.4
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Femme" "Moyennement satisfait" 2 60.8 79.3
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Homme" "Satisfait" 2 63 78.4
+"Homme" "Satisfait" 1 57.2 82.5
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Homme" "Satisfait" 1 71.3 69.6
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Femme" "Peu satisfait" 2 68.4 72.5
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Homme" "Moyennement satisfait" 2 67.1 73
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Femme" "Moyennement satisfait" 5 71.7 67
+"Femme" "Peu satisfait" 1 72.2 67.9
+"Femme" "Satisfait" 3 47 92.2
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Peu satisfait" 2 45.9 94.4
+"Femme" "Moyennement satisfait" 5 77.2 62.5
+"Femme" "Peu satisfait" 5 66.4 73.3
+"Homme" "Satisfait" 3 44.2 96
+"Homme" "Satisfait" 1 41 100.1
+"Femme" "Peu satisfait" 3 81.3 59.3
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Femme" "Moyennement satisfait" 2 77.1 62
+"Homme" "Peu satisfait" 2 78.6 63
+"Homme" "Satisfait" 2 58.2 81
+"Homme" "Peu satisfait" 1 62.5 77.2
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Homme" "Peu satisfait" 1 62.5 77.2
+"Homme" "Peu satisfait" 2 45.9 94.4
+"Femme" "Moyennement satisfait" 2 63.7 75.9
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Femme" "Satisfait" 3 47 92.2
+"Homme" "Moyennement satisfait" 4 40.3 98.9
+"Homme" "Satisfait" 2 34.2 105
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Homme" "Satisfait" 3 49.4 92.1
+"Femme" "Satisfait" 3 55.4 84.7
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Femme" "Moyennement satisfait" 4 84.8 56.7
+"Homme" "Satisfait" 1 61.2 79.5
+"Homme" "Satisfait" 1 51.1 88.8
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Homme" "Moyennement satisfait" 4 35.5 103.8
+"Homme" "Satisfait" 1 33 108.1
+"Homme" "Peu satisfait" 2 66.1 74.2
+"Homme" "Peu satisfait" 3 58.9 81.8
+"Femme" "Satisfait" 3 64.6 76.3
+"Homme" "Satisfait" 4 58 82.9
+"Homme" "Moyennement satisfait" 1 59 80.9
+"Homme" "Peu satisfait" 1 56.9 82.1
+"Femme" "Moyennement satisfait" 3 50.7 89.1
+"Femme" "Moyennement satisfait" 3 50.7 89.1
+"Homme" "Peu satisfait" 1 51.6 88.7
+"Homme" "Satisfait" 4 47.5 91.4
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Femme" "Peu satisfait" 3 81.3 59.3
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Satisfait" 2 45.7 96.6
+"Homme" "Satisfait" 2 34.2 105
+"Homme" "Peu satisfait" 2 67.6 72.7
+"Homme" "Satisfait" 4 58 82.9
+"Homme" "Peu satisfait" 3 58.9 81.8
+"Homme" "Satisfait" 3 46.7 93.1
+"Homme" "Satisfait" 2 56.2 82.8
+"Femme" "Moyennement satisfait" 1 70.8 69.5
+"Femme" "Moyennement satisfait" 3 73.8 66.8
+"Homme" "Moyennement satisfait" 4 35.5 103.8
+"Homme" "Satisfait" 1 46 94.9
+"Homme" "Satisfait" 1 33 108.1
+"Femme" "Moyennement satisfait" 2 54.5 85.2
+"Homme" "Satisfait" 3 46.7 93.1
+"Homme" "Satisfait" 4 49.8 89.2
+"Femme" "Satisfait" 4 64.9 75.4
+"Homme" "Peu satisfait" 3 42.6 97.7
+"Homme" "Satisfait" 3 41.4 97.8
+"Femme" "Peu satisfait" 2 68.4 72.5
+"Homme" "Satisfait" 3 64.9 75.6
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Homme" "Satisfait" 1 71.3 69.6
+"Homme" "Peu satisfait" 1 59.9 82.1
+"Homme" "Satisfait" 2 46.2 94.5
+"Homme" "Satisfait" 3 44.2 96
+"Homme" "Moyennement satisfait" 2 67.1 73
+"Homme" "Satisfait" 3 51 88
+"Femme" "Moyennement satisfait" 5 77.2 62.5
+"Homme" "Satisfait" 1 71.3 69.6
+"Homme" "Moyennement satisfait" 4 35.5 103.8
+"Homme" "Satisfait" 1 61.2 79.5
+"Femme" "Satisfait" 3 47 92.2
+"Femme" "Satisfait" 4 64.9 75.4
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Homme" "Satisfait" 2 60.1 80.6
+"Femme" "Satisfait" 4 64.9 75.4
+"Femme" "Peu satisfait" 2 88.5 50.3
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Femme" "Peu satisfait" 2 67.3 73.8
+"Homme" "Satisfait" 4 49.8 89.2
+"Femme" "Moyennement satisfait" 2 58.6 80.7
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Femme" "Moyennement satisfait" 2 58.6 80.7
+"Femme" "Peu satisfait" 5 66.4 73.3
+"Femme" "Peu satisfait" 5 65.2 76
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Homme" "Moyennement satisfait" 2 51.4 88.8
+"Femme" "Moyennement satisfait" 2 54.5 85.2
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Femme" "Moyennement satisfait" 3 50.7 89.1
+"Homme" "Moyennement satisfait" 2 52.2 88.5
+"Homme" "Peu satisfait" 1 59.9 82.1
+"Homme" "Satisfait" 4 47.5 91.4
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Femme" "Satisfait" 3 64.6 76.3
+"Homme" "Satisfait" 3 41.4 97.8
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Femme" "Moyennement satisfait" 2 63.7 75.9
+"Femme" "Moyennement satisfait" 6 65.2 75.8
+"Homme" "Peu satisfait" 1 56.9 82.1
+"Femme" "Peu satisfait" 2 88.5 50.3
+"Homme" "Satisfait" 3 41.4 97.8
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Homme" "Satisfait" 3 49.4 92.1
+"Femme" "Satisfait" 3 55.4 84.7
+"Homme" "Satisfait" 2 45.7 96.6
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Homme" "Satisfait" 3 64.9 75.6
+"Femme" "Peu satisfait" 5 66.4 73.3
+"Homme" "Moyennement satisfait" 3 68.5 70.8
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Femme" "Moyennement satisfait" 5 77.2 62.5
+"Homme" "Satisfait" 3 37.3 103.2
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Femme" "Moyennement satisfait" 5 71.7 67
+"Homme" "Moyennement satisfait" 2 67.1 73
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Femme" "Moyennement satisfait" 4 79.5 60.2
+"Femme" "Moyennement satisfait" 2 77.1 62
+"Femme" "Peu satisfait" 5 65.2 76
+"Homme" "Satisfait" 3 41.4 97.8
+"Femme" "Peu satisfait" 3 81.3 59.3
+"Homme" "Peu satisfait" 4 51.1 88.2
+"Femme" "Moyennement satisfait" 2 68.2 72.9
+"Homme" "Satisfait" 1 41 100.1
+"Homme" "Satisfait" 3 40.4 101.3
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Femme" "Peu satisfait" 2 67.3 73.8
+"Femme" "Peu satisfait" 1 72.2 67.9
+"Homme" "Peu satisfait" 2 66.1 74.2
+"Homme" "Satisfait" 1 47.2 91.3
+"Homme" "Peu satisfait" 3 42.6 97.7
+"Femme" "Satisfait" 1 63.5 77.3
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Femme" "Peu satisfait" 5 65.2 76
+"Femme" "Moyennement satisfait" 5 71.7 67
+"Homme" "Satisfait" 3 64.9 75.6
+"Homme" "Satisfait" 3 51 88
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Femme" "Peu satisfait" 5 66.4 73.3
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Satisfait" 1 55.5 85.1
+"Homme" "Moyennement satisfait" 2 51.4 88.8
+"Homme" "Satisfait" 2 45.7 96.6
+"Homme" "Peu satisfait" 2 66.1 74.2
+"Femme" "Moyennement satisfait" 7 71.1 69.6
+"Femme" "Peu satisfait" 1 72.2 67.9
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Homme" "Satisfait" 2 46.2 94.5
+"Homme" "Satisfait" 3 40.4 101.3
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Homme" "Peu satisfait" 1 59.9 82.1
+"Homme" "Satisfait" 4 49.8 89.2
+"Homme" "Satisfait" 2 67.2 72.3
+"Homme" "Satisfait" 2 58.2 81
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Moyennement satisfait" 2 52.2 88.5
+"Femme" "Moyennement satisfait" 7 71.1 69.6
+"Femme" "Moyennement satisfait" 2 77.1 62
+"Homme" "Satisfait" 1 71.3 69.6
+"Femme" "Satisfait" 3 47 92.2
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Satisfait" 4 58 82.9
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Homme" "Peu satisfait" 2 57.9 85.4
+"Homme" "Peu satisfait" 4 51.1 88.2
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Femme" "Moyennement satisfait" 7 71.1 69.6
+"Homme" "Satisfait" 3 44.2 96
+"Homme" "Satisfait" 2 43.7 96.4
+"Homme" "Peu satisfait" 2 78.6 63
+"Homme" "Peu satisfait" 2 57.9 85.4
+"Homme" "Satisfait" 2 46.2 94.5
+"Homme" "Satisfait" 2 45.7 96.6
+"Homme" "Satisfait" 4 58 82.9
+"Homme" "Peu satisfait" 1 56.9 82.1
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Homme" "Satisfait" 2 34.2 105
+"Homme" "Moyennement satisfait" 2 52.2 88.5
+"Homme" "Peu satisfait" 3 47.9 92.4
+"Femme" "Moyennement satisfait" 5 77.2 62.5
+"Femme" "Satisfait" 3 64.6 76.3
+"Homme" "Satisfait" 4 49.8 89.2
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Homme" "Peu satisfait" 1 59.9 80.2
+"Homme" "Satisfait" 3 46.7 93.1
+"Femme" "Satisfait" 4 64.9 75.4
+"Femme" "Moyennement satisfait" 3 50.7 89.1
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Femme" "Satisfait" 3 55.4 84.7
+"Homme" "Peu satisfait" 2 45.9 94.4
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Femme" "Satisfait" 3 47 92.2
+"Homme" "Satisfait" 1 33 108.1
+"Homme" "Peu satisfait" 2 67.6 72.7
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Homme" "Satisfait" 3 51 88
+"Homme" "Satisfait" 1 40.1 99.2
+"Femme" "Moyennement satisfait" 2 63.7 75.9
+"Homme" "Satisfait" 1 46 94.9
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Homme" "Peu satisfait" 2 34.5 106
+"Femme" "Moyennement satisfait" 5 77.2 62.5
+"Femme" "Peu satisfait" 2 67.3 73.8
+"Femme" "Moyennement satisfait" 7 71.1 69.6
+"Homme" "Peu satisfait" 1 51.6 88.7
+"Homme" "Peu satisfait" 1 43.3 94.8
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Homme" "Satisfait" 1 51.1 88.8
+"Homme" "Satisfait" 1 40.1 99.2
+"Homme" "Satisfait" 1 40.1 99.2
+"Homme" "Moyennement satisfait" 4 40.3 98.9
+"Homme" "Satisfait" 3 51 88
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Moyennement satisfait" 3 68.5 70.8
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Femme" "Peu satisfait" 2 67.3 73.8
+"Femme" "Peu satisfait" 5 65.2 76
+"Femme" "Satisfait" 3 55.4 84.7
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Homme" "Satisfait" 3 41.4 97.8
+"Homme" "Peu satisfait" 3 47.9 92.4
+"Homme" "Peu satisfait" 2 59.3 81.7
+"Femme" "Peu satisfait" 5 65.2 76
+"Homme" "Satisfait" 4 47.5 91.4
+"Homme" "Moyennement satisfait" 2 67.1 73
+"Homme" "Satisfait" 1 47.2 91.3
+"Homme" "Satisfait" 1 33 108.1
+"Homme" "Satisfait" 2 56.2 82.8
+"Femme" "Satisfait" 3 47 92.2
+"Homme" "Satisfait" 1 40.1 99.2
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Femme" "Satisfait" 3 47 92.2
+"Homme" "Moyennement satisfait" 2 51.4 88.8
+"Homme" "Satisfait" 2 46.2 94.5
+"Femme" "Moyennement satisfait" 6 65.2 75.8
+"Homme" "Peu satisfait" 1 51.6 88.7
+"Homme" "Satisfait" 4 47.5 91.4
+"Femme" "Peu satisfait" 2 67.3 73.8
+"Homme" "Satisfait" 1 28.6 111.8
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Homme" "Satisfait" 2 67.2 72.3
+"Homme" "Satisfait" 1 57.2 82.5
+"Homme" "Satisfait" 2 58.2 81
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Femme" "Peu satisfait" 2 68.4 72.5
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Homme" "Peu satisfait" 3 47.9 92.4
+"Homme" "Moyennement satisfait" 3 68.5 70.8
+"Homme" "Peu satisfait" 2 34.5 106
+"Femme" "Moyennement satisfait" 2 64.6 76.3
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Homme" "Peu satisfait" 3 47.9 92.4
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Homme" "Satisfait" 3 46.7 93.1
+"Homme" "Satisfait" 1 40.1 99.2
+"Homme" "Peu satisfait" 3 42.6 97.7
+"Homme" "Satisfait" 1 47.2 91.3
+"Homme" "Satisfait" 3 37.3 103.2
+"Homme" "Moyennement satisfait" 2 51.4 88.8
+"Homme" "Satisfait" 1 61.2 79.5
+"Femme" "Moyennement satisfait" 6 65.2 75.8
+"Homme" "Satisfait" 1 57.2 82.5
+"Homme" "Satisfait" 4 58 82.9
+"Femme" "Peu satisfait" 2 88.5 50.3
+"Homme" "Peu satisfait" 2 78.6 63
+"Femme" "Moyennement satisfait" 7 71.1 69.6
+"Homme" "Satisfait" 3 51 88
+"Femme" "Peu satisfait" 2 88.5 50.3
+"Femme" "Peu satisfait" 2 68.4 72.5
+"Homme" "Satisfait" 2 34.2 105
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Homme" "Satisfait" 3 64.9 75.6
+"Femme" "Moyennement satisfait" 2 63.7 75.9
+"Femme" "Peu satisfait" 5 65.2 76
+"Homme" "Satisfait" 3 49.4 92.1
+"Homme" "Satisfait" 1 71.3 69.6
+"Homme" "Satisfait" 1 51.1 88.8
+"Homme" "Satisfait" 2 58.2 81
+"Femme" "Moyennement satisfait" 2 60.8 79.3
+"Homme" "Satisfait" 1 71.3 69.6
+"Femme" "Moyennement satisfait" 1 70.8 69.5
+"Homme" "Satisfait" 1 28.6 111.8
+"Homme" "Moyennement satisfait" 2 51.4 88.8
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Homme" "Satisfait" 4 46.2 95.8
+"Femme" "Moyennement satisfait" 6 65.2 75.8
+"Femme" "Peu satisfait" 2 68.4 72.5
+"Homme" "Peu satisfait" 2 45.9 94.4
+"Homme" "Peu satisfait" 1 43.3 94.8
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Homme" "Peu satisfait" 1 56.9 82.1
+"Femme" "Moyennement satisfait" 2 60.8 79.3
+"Homme" "Satisfait" 4 58 82.9
+"Femme" "Moyennement satisfait" 5 77.2 62.5
+"Homme" "Moyennement satisfait" 2 67.1 73
+"Femme" "Moyennement satisfait" 2 73.1 67
+"Homme" "Peu satisfait" 2 57.9 85.4
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Satisfait" 1 55.5 85.1
+"Homme" "Satisfait" 2 46.2 94.5
+"Femme" "Moyennement satisfait" 2 68.2 72.9
+"Homme" "Satisfait" 2 63 78.4
+"Homme" "Satisfait" 3 37.3 103.2
+"Homme" "Satisfait" 1 41 100.1
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Femme" "Moyennement satisfait" 4 79.5 60.2
+"Homme" "Moyennement satisfait" 2 52.2 88.5
+"Homme" "Peu satisfait" 2 67.6 72.7
+"Homme" "Peu satisfait" 3 47.9 92.4
+"Homme" "Satisfait" 3 51 88
+"Femme" "Satisfait" 1 63.5 77.3
+"Femme" "Moyennement satisfait" 3 50.7 89.1
+"Homme" "Peu satisfait" 1 43.3 94.8
+"Homme" "Satisfait" 1 51.1 88.8
+"Homme" "Satisfait" 1 44.1 95.9
+"Femme" "Moyennement satisfait" 2 60.8 79.3
+"Homme" "Satisfait" 3 44.2 96
+"Homme" "Satisfait" 3 49.4 92.1
+"Femme" "Moyennement satisfait" 1 82.7 58.2
+"Homme" "Satisfait" 2 58.2 81
+"Femme" "Moyennement satisfait" 2 60.3 80
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Homme" "Satisfait" 2 63.9 75.9
+"Homme" "Satisfait" 2 63 78.4
+"Homme" "Satisfait" 2 58.2 81
+"Homme" "Peu satisfait" 2 57.9 85.4
+"Homme" "Satisfait" 4 47.5 91.4
+"Femme" "Peu satisfait" 2 88.5 50.3
+"Homme" "Peu satisfait" 3 42.6 97.7
+"Homme" "Peu satisfait" 2 34.5 106
+"Homme" "Satisfait" 4 49.8 89.2
+"Femme" "Peu satisfait" 5 66.4 73.3
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Homme" "Satisfait" 2 63.9 75.9
+"Homme" "Satisfait" 1 33 108.1
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Homme" "Moyennement satisfait" 1 48.7 92.2
+"Homme" "Satisfait" 1 47.2 91.3
+"Femme" "Moyennement satisfait" 2 60.3 80
+"Homme" "Peu satisfait" 2 34.5 106
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Homme" "Satisfait" 1 47.2 91.3
+"Homme" "Satisfait" 2 46.2 94.5
+"Femme" "Moyennement satisfait" 5 56.7 83.1
+"Homme" "Peu satisfait" 1 43.3 94.8
+"Femme" "Moyennement satisfait" 5 84.1 55.4
+"Femme" "Moyennement satisfait" 6 65.2 75.8
+"Femme" "Moyennement satisfait" 2 54.5 85.2
+"Femme" "Moyennement satisfait" 2 77.1 62
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Homme" "Satisfait" 3 37.3 103.2
+"Homme" "Peu satisfait" 1 43.3 94.8
+"Femme" "Moyennement satisfait" 3 82.1 57.9
+"Homme" "Satisfait" 4 47.5 91.4
+"Homme" "Satisfait" 1 61.2 79.5
+"Homme" "Satisfait" 1 46 94.9
+"Homme" "Peu satisfait" 1 43.3 94.8
+"Homme" "Satisfait" 1 33 108.1
+"Homme" "Peu satisfait" 2 56.1 83.1
+"Femme" "Peu satisfait" 2 88.5 50.3
+"Homme" "Peu satisfait" 2 45.9 94.4
+"Homme" "Peu satisfait" 2 31.4 110.5
+"Femme" "Moyennement satisfait" 2 60.8 79.3
+"Homme" "Peu satisfait" 2 57.9 85.4
+"Homme" "Peu satisfait" 1 56.9 82.1
+"Femme" "Peu satisfait" 5 66.4 73.3
+"Homme" "Moyennement satisfait" 2 51.4 88.8
+"Homme" "Satisfait" 1 46 94.9
+"Femme" "Moyennement satisfait" 5 64.9 75.1
+"Homme" "Satisfait" 3 64.9 75.6
+"Homme" "Peu satisfait" 1 62.5 77.2
+"Homme" "Satisfait" 4 47.5 91.4
+"Femme" "Satisfait" 1 63.5 77.3
+"Homme" "Satisfait" 4 49.8 89.2
+"Femme" "Moyennement satisfait" 2 77.1 62.4
+"Homme" "Peu satisfait" 1 62.5 77.2
+"Homme" "Moyennement satisfait" 3 58.9 80
+"Femme" "Moyennement satisfait" 4 79.5 60.2
+"Homme" "Peu satisfait" 3 42.6 97.7
+"Homme" "Peu satisfait" 3 58.9 81.8
+"Homme" "Peu satisfait" 2 57.9 85.4
+"Homme" "Satisfait" 2 46.2 94.5
+"Homme" "Satisfait" 2 60.1 80.6
