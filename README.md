@@ -14,7 +14,7 @@ Projet de statistiques - Analyse univariée, bivariée et tests d'hypothèses su
 ### Analyse univariée
 
 * **Variables qualitatives** (sexe, satisfaction) : tableaux de contingence, diagrammes en barres
-* **Nombre de sports pratiqués** : test d'ajustement à une loi de Poisson (hypothèse non rejetée, p-value = 0,49 — le résultat ne permet pas de rejeter (H_0) ; les données sont donc compatibles avec une loi de Poisson).
+* **Nombre de sports pratiqués** : test d'ajustement à une loi de Poisson (p-value = 0,49 ; au seuil de 5 %, l'hypothèse nulle n'est pas rejetée).
 * **Temps de réaction et de récupération** : histogrammes avec courbe de densité, droites de Henry (QQ-plots), puis **test de normalité d'Anderson-Darling** (choisi plutôt que Shapiro-Wilk ou Kolmogorov-Smirnov pour sa robustesse aux écarts en queue de distribution, adapté à l'échantillon de 500 observations) — dans les deux cas, l'hypothèse de normalité est rejetée malgré une apparence graphique trompeuse. Les paramètres sont tout de même estimés par maximum de vraisemblance (`fitdistr`) à titre indicatif
 
 ### Analyse bivariée et tests d'hypothèses
